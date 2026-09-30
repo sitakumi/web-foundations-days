@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About QuickNotes</title>
+</head>
+<body>
+
+  <!-- Same header as index.html -->
+  <header>
+    <h1>QuickNotes</h1>
+    <p>Capture ideas before they disappear.</p>
+  </header>
+
+  <!-- Same nav as index.html (inferred from typical QuickNotes layout; if nav was present, it's included) -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>About QuickNotes</h2>
+    <p>QuickNotes is a minimal note‑taking app designed to help you capture thoughts, tasks, and ideas instantly—without friction. Whether you're a student, developer, or writer, QuickNotes keeps your notes organised and always within reach.</p>
+
+    <!-- How to use QuickNotes: ordered list with at least 3 steps -->
+    <section>
+      <h3>How to use QuickNotes</h3>
+      <ol>
+        <li>Open the QuickNotes app on your device (browser or desktop).</li>
+        <li>Type your note into the input field and press <strong>Add Note</strong> (or hit <kbd>Enter</kbd>).</li>
+        <li>Your note appears in the list below, where you can review, edit, or delete it.</li>
+        <li>Use keyboard shortcuts (see table below) to navigate and manage notes faster.</li>
+      </ol>
+    </section>
+
+    <!-- Features: unordered list -->
+    <section>
+      <h3>Key Features</h3>
+      <ul>
+        <li>Lightning‑fast note creation – no sign‑up required.</li>
+        <li>Clean, distraction‑free interface.</li>
+        <li>Local storage – your notes stay on your device.</li>
+        <li>Keyboard‑friendly navigation for power users.</li>
+        <li>Responsive design that works on mobile and desktop.</li>
+        <li>Dark mode support (follows system preference).</li>
+      </ul>
+    </section>
+
+    <!-- Keyboard shortcuts table: heading row + at least 2 rows -->
+    <section>
+      <h3>Keyboard Shortcuts</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Shortcut</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><kbd>Ctrl</kbd> + <kbd>Enter</kbd> (or <kbd>Cmd</kbd> + <kbd>Enter</kbd>)</td>
+            <td>Add the current note</td>
+          </tr>
+          <tr>
+            <td><kbd>Ctrl</kbd> + <kbd>D</kbd> (or <kbd>Cmd</kbd> + <kbd>D</kbd>)</td>
+            <td>Delete the last note</td>
+          </tr>
+          <tr>
+            <td><kbd>Esc</kbd></td>
+            <td>Clear the note input field</td>
+          </tr>
+          <tr>
+            <td><kbd>↑</kbd> / <kbd>↓</kbd></td>
+            <td>Navigate through your notes list</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Feedback form section -->
+    <section>
+      <h3>We'd love your feedback</h3>
+      <form id="feedback-form">
+        <p>
+          <label for="feedback-name">Your name (optional):</label><br />
+          <input type="text" id="feedback-name" name="name" placeholder="e.g. Alex" />
+        </p>
+        <p>
+          <label for="feedback-email">Email (optional):</label><br />
+          <input type="email" id="feedback-email" name="email" placeholder="you@example.com" />
+        </p>
+        <p>
+          <label for="feedback-message">Your feedback:</label><br />
+          <textarea id="feedback-message" name="message" rows="4" cols="40" placeholder="Tell us what you think..." required></textarea>
+        </p>
+        <p>
+          <button type="submit">Send Feedback</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Same footer as index.html -->
+  <footer>
+    <p>&copy; 2026 QuickNotes. Built during Web Foundations.</p>
+  </footer>
+
+</body>
+</html>
