@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 5 · Users & Filter</title>
+
+</head>
+<body>
+  <div class="card">
+    <h1>User directory</h1>
+
+    <div class="toolbar">
+      <button id="load-users" type="button">📥 Load users</button>
+      <div class="filter-wrapper">
+        <label for="filter-input">Filter by name</label>
+        <input id="filter-input" type="text" placeholder="e.g. Leanne" autocomplete="off" />
+      </div>
+    </div>
+
+    <p id="status">Click "Load users" to fetch data.</p>
+
+    <ul id="users-list"></ul>
+  </div>
+
+  <!-- defer loads after HTML parsing -->
+  <script src="users.js" defer></script>
+</body>
+</html>
