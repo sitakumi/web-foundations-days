@@ -1,0 +1,112 @@
+:root {
+    --bg: #f9f9f9;
+    --surface: #ffffff;
+    --text: #1a1a1a;
+    --text-muted: #5a5a5a;
+    --border: #d0d0d0;
+    --accent: #2b6cb0;
+    --warning: #ed8936;
+    --over: #e53e3e;
+    --button-bg: #e2e8f0;
+    --button-text: #1a202c;
+}
+
+body.dark {
+    --bg: #181819;
+    --surface: #2d3748;
+    --text: #f7fafc;
+    --text-muted: #a0aec0;
+    --border: #4a5568;
+    --accent: #63b3ed;
+    --warning: #f6ad55;
+    --over: #fc8181;
+    --button-bg: #4a5568;
+    --button-text: #f7fafc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2rem 1rem;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.2s, color 0.2s;
+}
+
+.app {
+    max-width: 40rem;
+    margin: 0 auto;
+    background: var(--surface);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font: inherit;
+    color: var(--text);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    resize: vertical;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent);
+}
+
+.counter-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0.75rem 0;
+}
+
+.counter-row p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* character counter warning states */
+.warning {
+    color: var(--warning);
+}
+
+.over {
+    color: var(--over);
+    font-weight: bold;
+}
+
+.button-group {
+    display: flex;
+    gap: 0.75rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font: inherit;
+    color: var(--button-text);
+    background: var(--button-bg);
+    border: 1px solid var(--border);
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+button:hover {
+    border-color: var(--accent);
+}

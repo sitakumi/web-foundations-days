@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note · draft counter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <h1>Quick note</h1>
+
+    <textarea id="note-text" placeholder="Write something…" rows="6"></textarea>
+
+    <div class="counter-row">
+      <p id="char-count" aria-live="polite">0 / 200 characters</p>
+      <p id="word-count" aria-live="polite">0 words</p>
+    </div>
+
+    <div class="button-group">
+      <button id="clear-btn" type="button">Clear</button>
+      <button id="theme-toggle" type="button">Dark mode</button>
+    </div>
+  </main>
+</body>
+</html>
